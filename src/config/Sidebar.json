@@ -1,0 +1,25 @@
+[
+    {
+        "name": "User Management",
+        "icon": "Users",
+        "show": false,
+        "path": "/user",
+        "child": []
+    },
+    {
+        "name": "Contact",
+        "icon": "Users",
+        "show": true,
+        "path": "/",
+        "child": [
+            {
+                "name": "Contact List",
+                "path": "/contact"
+            },
+            {
+                "name": "Contact Group",
+                "path": "/contact/group"
+            }
+        ]
+    }
+]
