@@ -43,8 +43,11 @@ class App extends Component {
                         <Route path="/" exact render={(props) => <Page {...props} />} />
                         
                         <Route path="/user" exact render={(props) => <Page name="user" {...props} />} />
+
                         <Route path="/contact/group" exact render={(props) => <Page name="contact/group" {...props} />} />
                         <Route path="/contact" exact render={(props) => <Page name="contact" {...props} />} />
+
+                        <Route path="/settings" exact render={(props) => <Page name="settings" {...props} />} />
 
                         <Route path="/" render={(props) => <Page {...props} />} />
                     </Switch>

@@ -21,5 +21,12 @@
                 "path": "/contact/group"
             }
         ]
+    },
+    {
+        "name": "Settings",
+        "icon": "Settings",
+        "show": false,
+        "path": "/settings",
+        "child": []
     }
 ]

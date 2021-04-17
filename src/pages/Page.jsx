@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
 import Contact from './Contact';
 import ContactGroup from './ContactGroup';
+import Settings from './Settings';
 import UserManagement from './UserManagement';
 import NotFound from './_NotFound';
 
@@ -22,6 +23,9 @@ class Page extends Component {
                 return <Contact />
             case 'contact/group':
                 return <ContactGroup />
+
+            case 'settings':
+                return <Settings />
 
 
             default:
