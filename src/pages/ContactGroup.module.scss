@@ -1,0 +1,58 @@
+.groupList {
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    .text {
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: rgba(43, 43, 43, 0.5);
+    }
+
+    &.active {
+        cursor: default;
+        background: rgba(115, 102, 255, 0.16);
+
+        .text {
+            color: rgb(43, 43, 43);
+        }
+    }
+
+    &:hover {
+        background: rgba(115, 102, 255, 0.16);
+
+        .text {
+            color: rgb(43, 43, 43);
+        }
+    }
+}
+
+.group {
+    &::-webkit-scrollbar {
+        background-color: transparent;
+        width:15px
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color:transparent
+    }
+    
+    &::-webkit-scrollbar-track:hover {
+        background-color:transparent
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color:#e6e6e6;
+        border-radius:16px;
+        border: 4.5px solid white;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background-color:#dadada;
+        cursor: pointer;
+    }
+    
+}
