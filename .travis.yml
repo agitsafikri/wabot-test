@@ -1,14 +1,9 @@
+sudo: false
+
 language: node_js
+
 node_js:
-  - "stable"
+  - node"
 cache: npm
 script:
-  - npm test
-  - npm run build
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  on:
-    branch: gh-pages
+  - npm run test
