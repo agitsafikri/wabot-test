@@ -18,7 +18,7 @@ class NotFound extends Component {
                             <Col md="8 offset-md-2">
                                 <p className="sub-content mt-4">{"The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved."}</p>
                             </Col>
-                            <Link to="/contact"><Button color="danger" size='lg'>Back to Home</Button></Link>
+                            <Link to="/contact"><Button color="danger" size='lg'>Back Home</Button></Link>
                         </Container>
                     </div>
                 </div>
