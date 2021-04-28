@@ -48,7 +48,7 @@ class Contact extends Component {
                 },
                 {
                     id: 4,
-                    name: "Fenny Feronika",
+                    name: "Fennyyy Feronika",
                     phone: "+6289602653343"
                 }
             ]
