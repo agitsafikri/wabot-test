@@ -27,5 +27,5 @@ jobs:
           git status
           docker container stop wabotweb-app
           docker rm wabotweb-app
-          docker build -t wabotweb-image .
+          docker build -t wabotweb-image . |
           docker run docker run -d -it  -p 80:80/tcp --name wabotweb-app wabotweb-image:latest
