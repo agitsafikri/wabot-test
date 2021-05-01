@@ -6,6 +6,7 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm ci --silent
 RUN npm i react-scripts --silent
+COPY .htaccess.example .htaccess
 COPY . ./
 RUN npm run build
 
