@@ -22,7 +22,7 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY}}
         port: 22
         script:
-          cd wabot-test
+          cd ~/wabot-test
           git pull origin master
           git status
           docker container stop wabotweb-app
