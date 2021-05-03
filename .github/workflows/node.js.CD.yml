@@ -26,6 +26,6 @@ jobs:
           git pull origin master
           git status
           docker container stop wabot-app
-          docker rm wabotweb-app
+          docker rm wabot-app
           docker build -t wabot-image . \
           docker run docker run -d -it  -p 80:80/tcp --name wabot-app wabot-image:latest
