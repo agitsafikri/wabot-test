@@ -9,9 +9,13 @@ RUN npm i react-scripts --silent
 COPY . ./
 RUN npm run build
 
-# Stage 2
-FROM nginx:1.17.1-alpine
-COPY --from=build-step /app/build /usr/share/nginx/html
+# Stage 2 nginx
+#FROM nginx:1.17.1-alpine
+#COPY --from=build-step /app/build /usr/share/nginx/html
+
+#stage 2 apache
+FROM php:7-apache
+COPY --from=build-step /app/build /var/www/html
 
 
 
