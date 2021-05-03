@@ -18,6 +18,7 @@ FROM nginx:1.17.1-alpine
 FROM php:7-apache
 COPY --from=build-step /app/build /var/www/html
 COPY --from=build-step /app/example-httaccess.conf /var/www/html/.htaccess
+RUN cp /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
 
 
 
