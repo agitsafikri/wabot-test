@@ -20,5 +20,6 @@ COPY --from=build-step /app/build /var/www/html
 
 
 EXPOSE 80
-CMD ["nginx","-g","daemon off;"]
+#CMD ["nginx","-g","daemon off;"]
+CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 
