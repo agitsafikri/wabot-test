@@ -12,6 +12,7 @@ RUN npm run build
 # Stage 2 nginx
 FROM nginx:1.17.1-alpine
 COPY --from=build-step /app/build /usr/share/nginx/html
+COPY --from=build-step /app/example-httaccess.conf /usr/share/nginx/html/.htaccess
 
 #stage 2 apache
 #FROM php:7-apache
