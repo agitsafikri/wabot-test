@@ -10,16 +10,16 @@ COPY . ./
 RUN npm run build
 
 # Stage 2 nginx
-#FROM nginx:1.17.1-alpine
-#COPY --from=build-step /app/build /usr/share/nginx/html
+FROM nginx:1.17.1-alpine
+COPY --from=build-step /app/build /usr/share/nginx/html
 
 #stage 2 apache
-FROM php:7-apache
-COPY --from=build-step /app/build /var/www/html
+#FROM php:7-apache
+#COPY --from=build-step /app/build /var/www/html
 
 
 
 EXPOSE 80
-#CMD ["nginx","-g","daemon off;"]
-CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+CMD ["nginx","-g","daemon off;"]
+#CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 
